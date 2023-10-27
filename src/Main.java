@@ -6,9 +6,9 @@ public class Main
     {
 
         Random random = new Random();
-        int rspnsPckd = random.nextInt(20);
+        int responsePicked = random.nextInt(20);
 
-        String[] posRspns =          {
+        String[] positiveResponse =          {
                                      "It is certain",
                                      "It is decidedly so",
                                      "Without a doubt", 
@@ -21,7 +21,7 @@ public class Main
                                      "Signs point to yes"
                                      };
 
-        String[] vagueRspns =        {
+        String[] vagueResponse =        {
                                      "Reply hazy, try again",
                                      "Ask again later" ,
                                      "Better not tell you now",
@@ -29,7 +29,7 @@ public class Main
                                      "Concentrate and ask again"
                                      };
 
-        String[] negRspns =          {
+        String[] negativeResponse =          {
                                      "Don't count on it", 
                                      "My reply is no", 
                                      "My sources say no", 
@@ -39,23 +39,23 @@ public class Main
 
 // ==============================================================
 
-        if (rspnsPckd <= 9)
+        if (responesPicked <= 9)
         {
-            Random random2 = new Random();
-            int posRspnsPckd = random2.nextInt(10);
-            System.out.println(posRspns[posRspnsPckd]);
+            Random positiveRandom = new Random();
+            int positiveResponsePicked = positiveRandom.nextInt(positiveResponse.length);
+            System.out.println(positiveResponse[positiveResponsePicked]);
         }
-        else if (rspnsPckd > 9 && rspnsPckd <= 14)
+        else if (responsePicked > 9 && responsePicked <= 14)
         {
-            Random random3 = new Random();
-            int vagueRspnsPckd = random3.nextInt(5);
-            System.out.println(vagueRspns[vagueRspnsPckd]);
+            Random vagueRandom = new Random();
+            int vagueResponsePicked = vagueRandom.nextInt(vaugeResponse.length);
+            System.out.println(vagueResponse[vagueResponsePicked]);
         }
         else
         {
-            Random random4 = new Random();
-            int negRspnsPckd = random4.nextInt(5);
-            System.out.println(negRspns[negRspnsPckd]);
+            Random negativeRandom = new Random();
+            int negativeResponsePicked = negativeRandom.nextInt(negativeResponse.length);
+            System.out.println(negativeResponse[negativeResponsePicked]);
         }
 
     }
